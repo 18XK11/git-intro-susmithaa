@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
 public class HelloWorldController {
-
+int i;
     @GetMapping
     public ResponseEntity<String> print(){
         return new ResponseEntity<String>("Hello People", HttpStatus.OK);
